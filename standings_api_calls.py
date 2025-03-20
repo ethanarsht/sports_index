@@ -25,7 +25,8 @@ city_grouping = {
     'Kansas City': ['Kansas City-Omaha'],
     'New Orleans': ['New Orleans/Oklahoma City'],
     'Montreal': ['Montréal'],
-    'Phoenix': ['Arizona']
+    'Phoenix': ['Arizona'],
+    'Carolina': ['Charlotte']
 }
 
 inverted_grouping = {}

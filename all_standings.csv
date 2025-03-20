@@ -2913,20 +2913,20 @@ San Diego, Padres,0.5740740740740741,2024,2024,MLB
 Phoenix, Diamondbacks,0.5493827160493827,2024,2024,MLB
 Bay Area, Giants,0.49382716049382713,2024,2024,MLB
 Denver, Rockies,0.3765432098765432,2024,2024,MLB
-Cincinnati,Royals,0.5,1969,1968-69,NBA
-Los Angeles,Lakers,0.671,1969,1968-69,NBA
-Bay Area,Warriors,0.5,1969,1968-69,NBA
-Phoenix,Suns,0.195,1969,1968-69,NBA
-Boston,Celtics,0.585,1969,1968-69,NBA
-Seattle,SuperSonics,0.366,1969,1968-69,NBA
-Philadelphia,76ers,0.671,1969,1968-69,NBA
-Chicago,Bulls,0.402,1969,1968-69,NBA
-Baltimore,Bullets,0.695,1969,1968-69,NBA
 Atlanta,Hawks,0.585,1969,1968-69,NBA
-New York,Knicks,0.659,1969,1968-69,NBA
-Detroit,Pistons,0.39,1969,1968-69,NBA
-Milwaukee,Bucks,0.329,1969,1968-69,NBA
+Boston,Celtics,0.585,1969,1968-69,NBA
+Chicago,Bulls,0.402,1969,1968-69,NBA
+Bay Area,Warriors,0.5,1969,1968-69,NBA
 San Diego,Rockets,0.451,1969,1968-69,NBA
+Los Angeles,Lakers,0.671,1969,1968-69,NBA
+Milwaukee,Bucks,0.329,1969,1968-69,NBA
+New York,Knicks,0.659,1969,1968-69,NBA
+Philadelphia,76ers,0.671,1969,1968-69,NBA
+Phoenix,Suns,0.195,1969,1968-69,NBA
+Cincinnati,Royals,0.5,1969,1968-69,NBA
+Seattle,SuperSonics,0.366,1969,1968-69,NBA
+Baltimore,Bullets,0.695,1969,1968-69,NBA
+Detroit,Pistons,0.39,1969,1968-69,NBA
 Cincinnati,Royals,0.439,1970,1969-70,NBA
 Los Angeles,Lakers,0.561,1970,1969-70,NBA
 Bay Area,Warriors,0.366,1970,1969-70,NBA
@@ -3027,24 +3027,24 @@ Phoenix,Suns,0.39,1975,1974-75,NBA
 Atlanta,Hawks,0.378,1975,1974-75,NBA
 Los Angeles,Lakers,0.366,1975,1974-75,NBA
 New Orleans,Jazz,0.28,1975,1974-75,NBA
-Boston,Celtics,0.659,1976,1975-76,NBA
 Bay Area,Warriors,0.72,1976,1975-76,NBA
+Boston,Celtics,0.659,1976,1975-76,NBA
 Cleveland,Cavaliers,0.598,1976,1975-76,NBA
 Milwaukee,Bucks,0.463,1976,1975-76,NBA
 Seattle,SuperSonics,0.524,1976,1975-76,NBA
 Washington,Bullets,0.585,1976,1975-76,NBA
 Buffalo,Braves,0.561,1976,1975-76,NBA
-Philadelphia,76ers,0.561,1976,1975-76,NBA
 Phoenix,Suns,0.512,1976,1975-76,NBA
+Philadelphia,76ers,0.561,1976,1975-76,NBA
 Detroit,Pistons,0.439,1976,1975-76,NBA
-Houston,Rockets,0.488,1976,1975-76,NBA
 Los Angeles,Lakers,0.488,1976,1975-76,NBA
-New York,Knicks,0.463,1976,1975-76,NBA
+Houston,Rockets,0.488,1976,1975-76,NBA
 Portland,Trail Blazers,0.451,1976,1975-76,NBA
+New York,Knicks,0.463,1976,1975-76,NBA
 New Orleans,Jazz,0.463,1976,1975-76,NBA
 Kansas City,Kings,0.378,1976,1975-76,NBA
-Atlanta,Hawks,0.354,1976,1975-76,NBA
 Chicago,Bulls,0.293,1976,1975-76,NBA
+Atlanta,Hawks,0.354,1976,1975-76,NBA
 Los Angeles,Lakers,0.646,1977,1976-77,NBA
 Philadelphia,76ers,0.61,1977,1976-77,NBA
 Denver,Nuggets,0.61,1977,1976-77,NBA
@@ -3133,26 +3133,26 @@ New Jersey,Nets,0.415,1980,1979-80,NBA
 Utah,Jazz,0.293,1980,1979-80,NBA
 Bay Area,Warriors,0.293,1980,1979-80,NBA
 Detroit,Pistons,0.195,1980,1979-80,NBA
+Phoenix,Suns,0.695,1981,1980-81,NBA
 Boston,Celtics,0.756,1981,1980-81,NBA
 Philadelphia,76ers,0.756,1981,1980-81,NBA
-Phoenix,Suns,0.695,1981,1980-81,NBA
 San Antonio,Spurs,0.634,1981,1980-81,NBA
 Los Angeles,Lakers,0.659,1981,1980-81,NBA
 Milwaukee,Bucks,0.732,1981,1980-81,NBA
-New York,Knicks,0.61,1981,1980-81,NBA
 Portland,Trail Blazers,0.549,1981,1980-81,NBA
+New York,Knicks,0.61,1981,1980-81,NBA
+Kansas City,Kings,0.488,1981,1980-81,NBA
 Chicago,Bulls,0.549,1981,1980-81,NBA
 Houston,Rockets,0.488,1981,1980-81,NBA
-Kansas City,Kings,0.488,1981,1980-81,NBA
 Indiana,Pacers,0.537,1981,1980-81,NBA
-Bay Area,Warriors,0.476,1981,1980-81,NBA
 Washington,Bullets,0.476,1981,1980-81,NBA
-Atlanta,Hawks,0.378,1981,1980-81,NBA
+Bay Area,Warriors,0.476,1981,1980-81,NBA
 Denver,Nuggets,0.451,1981,1980-81,NBA
-San Diego,Clippers,0.439,1981,1980-81,NBA
+Atlanta,Hawks,0.378,1981,1980-81,NBA
 Cleveland,Cavaliers,0.341,1981,1980-81,NBA
-New Jersey,Nets,0.293,1981,1980-81,NBA
+San Diego,Clippers,0.439,1981,1980-81,NBA
 Seattle,SuperSonics,0.415,1981,1980-81,NBA
+New Jersey,Nets,0.293,1981,1980-81,NBA
 Utah,Jazz,0.341,1981,1980-81,NBA
 Detroit,Pistons,0.256,1981,1980-81,NBA
 Dallas,Mavericks,0.183,1981,1980-81,NBA
@@ -3181,17 +3181,17 @@ Utah,Jazz,0.305,1982,1981-82,NBA
 San Diego,Clippers,0.207,1982,1981-82,NBA
 Los Angeles,Lakers,0.707,1983,1982-83,NBA
 Philadelphia,76ers,0.793,1983,1982-83,NBA
-San Antonio,Spurs,0.646,1983,1982-83,NBA
-Milwaukee,Bucks,0.622,1983,1982-83,NBA
 Phoenix,Suns,0.646,1983,1982-83,NBA
+Milwaukee,Bucks,0.622,1983,1982-83,NBA
+San Antonio,Spurs,0.646,1983,1982-83,NBA
 Boston,Celtics,0.683,1983,1982-83,NBA
-New Jersey,Nets,0.598,1983,1982-83,NBA
 Seattle,SuperSonics,0.585,1983,1982-83,NBA
-New York,Knicks,0.537,1983,1982-83,NBA
+New Jersey,Nets,0.598,1983,1982-83,NBA
 Portland,Trail Blazers,0.561,1983,1982-83,NBA
-Atlanta,Hawks,0.524,1983,1982-83,NBA
-Denver,Nuggets,0.549,1983,1982-83,NBA
+New York,Knicks,0.537,1983,1982-83,NBA
 Kansas City,Kings,0.549,1983,1982-83,NBA
+Denver,Nuggets,0.549,1983,1982-83,NBA
+Atlanta,Hawks,0.524,1983,1982-83,NBA
 Washington,Bullets,0.512,1983,1982-83,NBA
 Dallas,Mavericks,0.463,1983,1982-83,NBA
 Detroit,Pistons,0.451,1983,1982-83,NBA
@@ -3199,8 +3199,8 @@ Chicago,Bulls,0.341,1983,1982-83,NBA
 Utah,Jazz,0.366,1983,1982-83,NBA
 Bay Area,Warriors,0.366,1983,1982-83,NBA
 Cleveland,Cavaliers,0.28,1983,1982-83,NBA
-Indiana,Pacers,0.244,1983,1982-83,NBA
 San Diego,Clippers,0.305,1983,1982-83,NBA
+Indiana,Pacers,0.244,1983,1982-83,NBA
 Houston,Rockets,0.171,1983,1982-83,NBA
 Los Angeles,Lakers,0.659,1984,1983-84,NBA
 Boston,Celtics,0.756,1984,1983-84,NBA
@@ -3227,24 +3227,24 @@ Indiana,Pacers,0.317,1984,1983-84,NBA
 Houston,Rockets,0.354,1984,1983-84,NBA
 Boston,Celtics,0.768,1985,1984-85,NBA
 Los Angeles,Lakers,0.756,1985,1984-85,NBA
-Milwaukee,Bucks,0.72,1985,1984-85,NBA
 Denver,Nuggets,0.634,1985,1984-85,NBA
-Philadelphia,76ers,0.707,1985,1984-85,NBA
+Milwaukee,Bucks,0.72,1985,1984-85,NBA
 Houston,Rockets,0.585,1985,1984-85,NBA
-Detroit,Pistons,0.561,1985,1984-85,NBA
+Philadelphia,76ers,0.707,1985,1984-85,NBA
 Dallas,Mavericks,0.537,1985,1984-85,NBA
+Detroit,Pistons,0.561,1985,1984-85,NBA
 New Jersey,Nets,0.512,1985,1984-85,NBA
 Portland,Trail Blazers,0.512,1985,1984-85,NBA
 San Antonio,Spurs,0.5,1985,1984-85,NBA
 Utah,Jazz,0.5,1985,1984-85,NBA
 Washington,Bullets,0.488,1985,1984-85,NBA
 Chicago,Bulls,0.463,1985,1984-85,NBA
-Phoenix,Suns,0.439,1985,1984-85,NBA
 Cleveland,Cavaliers,0.439,1985,1984-85,NBA
-Seattle,SuperSonics,0.378,1985,1984-85,NBA
+Phoenix,Suns,0.439,1985,1984-85,NBA
 Atlanta,Hawks,0.415,1985,1984-85,NBA
 Los Angeles,Clippers,0.378,1985,1984-85,NBA
 Kansas City,Kings,0.378,1985,1984-85,NBA
+Seattle,SuperSonics,0.378,1985,1984-85,NBA
 New York,Knicks,0.293,1985,1984-85,NBA
 Indiana,Pacers,0.268,1985,1984-85,NBA
 Bay Area,Warriors,0.268,1985,1984-85,NBA
@@ -3294,26 +3294,26 @@ New Jersey,Nets,0.293,1987,1986-87,NBA
 New York,Knicks,0.293,1987,1986-87,NBA
 San Antonio,Spurs,0.341,1987,1986-87,NBA
 Los Angeles,Clippers,0.146,1987,1986-87,NBA
-Boston,Celtics,0.695,1988,1987-88,NBA
 Los Angeles,Lakers,0.756,1988,1987-88,NBA
+Boston,Celtics,0.695,1988,1987-88,NBA
 Denver,Nuggets,0.659,1988,1987-88,NBA
 Detroit,Pistons,0.659,1988,1987-88,NBA
-Chicago,Bulls,0.61,1988,1987-88,NBA
-Atlanta,Hawks,0.61,1988,1987-88,NBA
 Dallas,Mavericks,0.646,1988,1987-88,NBA
 Portland,Trail Blazers,0.646,1988,1987-88,NBA
-Milwaukee,Bucks,0.512,1988,1987-88,NBA
-Utah,Jazz,0.573,1988,1987-88,NBA
+Chicago,Bulls,0.61,1988,1987-88,NBA
+Atlanta,Hawks,0.61,1988,1987-88,NBA
 Cleveland,Cavaliers,0.512,1988,1987-88,NBA
+Utah,Jazz,0.573,1988,1987-88,NBA
+Milwaukee,Bucks,0.512,1988,1987-88,NBA
 Houston,Rockets,0.561,1988,1987-88,NBA
-Indiana,Pacers,0.463,1988,1987-88,NBA
-New York,Knicks,0.463,1988,1987-88,NBA
 Seattle,SuperSonics,0.537,1988,1987-88,NBA
 Washington,Bullets,0.463,1988,1987-88,NBA
+Indiana,Pacers,0.463,1988,1987-88,NBA
+New York,Knicks,0.463,1988,1987-88,NBA
 San Antonio,Spurs,0.378,1988,1987-88,NBA
 Phoenix,Suns,0.341,1988,1987-88,NBA
-Philadelphia,76ers,0.439,1988,1987-88,NBA
 Sacramento,Kings,0.293,1988,1987-88,NBA
+Philadelphia,76ers,0.439,1988,1987-88,NBA
 New Jersey,Nets,0.232,1988,1987-88,NBA
 Bay Area,Warriors,0.244,1988,1987-88,NBA
 Los Angeles,Clippers,0.207,1988,1987-88,NBA
@@ -3327,20 +3327,20 @@ Seattle,SuperSonics,0.573,1989,1988-89,NBA
 Atlanta,Hawks,0.634,1989,1988-89,NBA
 Houston,Rockets,0.549,1989,1988-89,NBA
 Milwaukee,Bucks,0.598,1989,1988-89,NBA
-Chicago,Bulls,0.573,1989,1988-89,NBA
 Denver,Nuggets,0.537,1989,1988-89,NBA
-Philadelphia,76ers,0.561,1989,1988-89,NBA
+Chicago,Bulls,0.573,1989,1988-89,NBA
 Bay Area,Warriors,0.524,1989,1988-89,NBA
+Philadelphia,76ers,0.561,1989,1988-89,NBA
 Portland,Trail Blazers,0.476,1989,1988-89,NBA
 Boston,Celtics,0.512,1989,1988-89,NBA
 Dallas,Mavericks,0.463,1989,1988-89,NBA
 Washington,Bullets,0.488,1989,1988-89,NBA
-Indiana,Pacers,0.341,1989,1988-89,NBA
 Sacramento,Kings,0.329,1989,1988-89,NBA
-San Antonio,Spurs,0.256,1989,1988-89,NBA
-New Jersey,Nets,0.317,1989,1988-89,NBA
+Indiana,Pacers,0.341,1989,1988-89,NBA
 Los Angeles,Clippers,0.256,1989,1988-89,NBA
-Charlotte,Hornets,0.244,1989,1988-89,NBA
+New Jersey,Nets,0.317,1989,1988-89,NBA
+San Antonio,Spurs,0.256,1989,1988-89,NBA
+Carolina,Hornets,0.244,1989,1988-89,NBA
 South Florida,Heat,0.183,1989,1988-89,NBA
 Los Angeles,Lakers,0.768,1990,1989-90,NBA
 Detroit,Pistons,0.72,1990,1989-90,NBA
@@ -3368,7 +3368,7 @@ Orlando,Magic,0.22,1990,1989-90,NBA
 Sacramento,Kings,0.28,1990,1989-90,NBA
 Minnesota,Timberwolves,0.268,1990,1989-90,NBA
 New Jersey,Nets,0.207,1990,1989-90,NBA
-Charlotte,Hornets,0.232,1990,1989-90,NBA
+Carolina,Hornets,0.232,1990,1989-90,NBA
 Portland,Trail Blazers,0.768,1991,1990-91,NBA
 Chicago,Bulls,0.744,1991,1990-91,NBA
 Boston,Celtics,0.683,1991,1990-91,NBA
@@ -3390,7 +3390,7 @@ Cleveland,Cavaliers,0.402,1991,1990-91,NBA
 Orlando,Magic,0.378,1991,1990-91,NBA
 Washington,Bullets,0.366,1991,1990-91,NBA
 Minnesota,Timberwolves,0.354,1991,1990-91,NBA
-Charlotte,Hornets,0.317,1991,1990-91,NBA
+Carolina,Hornets,0.317,1991,1990-91,NBA
 New Jersey,Nets,0.317,1991,1990-91,NBA
 Dallas,Mavericks,0.341,1991,1990-91,NBA
 South Florida,Heat,0.293,1991,1990-91,NBA
@@ -3417,36 +3417,36 @@ Houston,Rockets,0.512,1992,1991-92,NBA
 Sacramento,Kings,0.354,1992,1991-92,NBA
 Philadelphia,76ers,0.427,1992,1991-92,NBA
 Denver,Nuggets,0.293,1992,1991-92,NBA
-Charlotte,Hornets,0.378,1992,1991-92,NBA
+Carolina,Hornets,0.378,1992,1991-92,NBA
 Milwaukee,Bucks,0.378,1992,1991-92,NBA
 Dallas,Mavericks,0.268,1992,1991-92,NBA
 Minnesota,Timberwolves,0.183,1992,1991-92,NBA
 Washington,Bullets,0.305,1992,1991-92,NBA
 Orlando,Magic,0.256,1992,1991-92,NBA
-Phoenix,Suns,0.756,1993,1992-93,NBA
 New York,Knicks,0.732,1993,1992-93,NBA
+Phoenix,Suns,0.756,1993,1992-93,NBA
+Chicago,Bulls,0.695,1993,1992-93,NBA
 Houston,Rockets,0.671,1993,1992-93,NBA
 Seattle,SuperSonics,0.671,1993,1992-93,NBA
-Chicago,Bulls,0.695,1993,1992-93,NBA
 Cleveland,Cavaliers,0.659,1993,1992-93,NBA
-Portland,Trail Blazers,0.622,1993,1992-93,NBA
 Boston,Celtics,0.585,1993,1992-93,NBA
-Charlotte,Hornets,0.537,1993,1992-93,NBA
+Portland,Trail Blazers,0.622,1993,1992-93,NBA
 San Antonio,Spurs,0.598,1993,1992-93,NBA
-New Jersey,Nets,0.524,1993,1992-93,NBA
+Carolina,Hornets,0.537,1993,1992-93,NBA
 Atlanta,Hawks,0.524,1993,1992-93,NBA
+New Jersey,Nets,0.524,1993,1992-93,NBA
 Utah,Jazz,0.573,1993,1992-93,NBA
 Los Angeles,Clippers,0.5,1993,1992-93,NBA
 Los Angeles,Lakers,0.476,1993,1992-93,NBA
-Indiana,Pacers,0.5,1993,1992-93,NBA
 Orlando,Magic,0.5,1993,1992-93,NBA
+Indiana,Pacers,0.5,1993,1992-93,NBA
 Denver,Nuggets,0.439,1993,1992-93,NBA
 Bay Area,Warriors,0.415,1993,1992-93,NBA
 Detroit,Pistons,0.488,1993,1992-93,NBA
 South Florida,Heat,0.439,1993,1992-93,NBA
 Sacramento,Kings,0.305,1993,1992-93,NBA
-Minnesota,Timberwolves,0.232,1993,1992-93,NBA
 Milwaukee,Bucks,0.341,1993,1992-93,NBA
+Minnesota,Timberwolves,0.232,1993,1992-93,NBA
 Dallas,Mavericks,0.134,1993,1992-93,NBA
 Philadelphia,76ers,0.317,1993,1992-93,NBA
 Washington,Bullets,0.268,1993,1992-93,NBA
@@ -3467,7 +3467,7 @@ New Jersey,Nets,0.549,1994,1993-94,NBA
 South Florida,Heat,0.512,1994,1993-94,NBA
 Denver,Nuggets,0.512,1994,1993-94,NBA
 Los Angeles,Lakers,0.402,1994,1993-94,NBA
-Charlotte,Hornets,0.5,1994,1993-94,NBA
+Carolina,Hornets,0.5,1994,1993-94,NBA
 Sacramento,Kings,0.341,1994,1993-94,NBA
 Boston,Celtics,0.39,1994,1993-94,NBA
 Los Angeles,Clippers,0.329,1994,1993-94,NBA
@@ -3477,35 +3477,35 @@ Washington,Bullets,0.293,1994,1993-94,NBA
 Dallas,Mavericks,0.159,1994,1993-94,NBA
 Detroit,Pistons,0.244,1994,1993-94,NBA
 Milwaukee,Bucks,0.244,1994,1993-94,NBA
-San Antonio,Spurs,0.756,1995,1994-95,NBA
 Orlando,Magic,0.695,1995,1994-95,NBA
-Indiana,Pacers,0.634,1995,1994-95,NBA
+San Antonio,Spurs,0.756,1995,1994-95,NBA
 Phoenix,Suns,0.72,1995,1994-95,NBA
+Indiana,Pacers,0.634,1995,1994-95,NBA
 New York,Knicks,0.671,1995,1994-95,NBA
 Utah,Jazz,0.732,1995,1994-95,NBA
+Carolina,Hornets,0.61,1995,1994-95,NBA
 Seattle,SuperSonics,0.695,1995,1994-95,NBA
-Charlotte,Hornets,0.61,1995,1994-95,NBA
 Los Angeles,Lakers,0.585,1995,1994-95,NBA
 Chicago,Bulls,0.573,1995,1994-95,NBA
-Houston,Rockets,0.573,1995,1994-95,NBA
 Cleveland,Cavaliers,0.524,1995,1994-95,NBA
+Houston,Rockets,0.573,1995,1994-95,NBA
 Portland,Trail Blazers,0.537,1995,1994-95,NBA
 Atlanta,Hawks,0.512,1995,1994-95,NBA
-Boston,Celtics,0.427,1995,1994-95,NBA
 Denver,Nuggets,0.5,1995,1994-95,NBA
-Milwaukee,Bucks,0.415,1995,1994-95,NBA
+Boston,Celtics,0.427,1995,1994-95,NBA
 Sacramento,Kings,0.476,1995,1994-95,NBA
-Dallas,Mavericks,0.439,1995,1994-95,NBA
+Milwaukee,Bucks,0.415,1995,1994-95,NBA
 South Florida,Heat,0.39,1995,1994-95,NBA
-New Jersey,Nets,0.366,1995,1994-95,NBA
+Dallas,Mavericks,0.439,1995,1994-95,NBA
 Bay Area,Warriors,0.317,1995,1994-95,NBA
-Detroit,Pistons,0.341,1995,1994-95,NBA
+New Jersey,Nets,0.366,1995,1994-95,NBA
 Minnesota,Timberwolves,0.256,1995,1994-95,NBA
-Philadelphia,76ers,0.293,1995,1994-95,NBA
+Detroit,Pistons,0.341,1995,1994-95,NBA
 Los Angeles,Clippers,0.207,1995,1994-95,NBA
+Philadelphia,76ers,0.293,1995,1994-95,NBA
 Washington,Bullets,0.256,1995,1994-95,NBA
-Seattle,SuperSonics,0.78,1996,1995-96,NBA
 Chicago,Bulls,0.878,1996,1995-96,NBA
+Seattle,SuperSonics,0.78,1996,1995-96,NBA
 Orlando,Magic,0.732,1996,1995-96,NBA
 San Antonio,Spurs,0.72,1996,1995-96,NBA
 Indiana,Pacers,0.634,1996,1995-96,NBA
@@ -3514,18 +3514,18 @@ Cleveland,Cavaliers,0.573,1996,1995-96,NBA
 Los Angeles,Lakers,0.646,1996,1995-96,NBA
 New York,Knicks,0.573,1996,1995-96,NBA
 Houston,Rockets,0.585,1996,1995-96,NBA
-Portland,Trail Blazers,0.537,1996,1995-96,NBA
 Atlanta,Hawks,0.561,1996,1995-96,NBA
+Portland,Trail Blazers,0.537,1996,1995-96,NBA
 Detroit,Pistons,0.561,1996,1995-96,NBA
 Phoenix,Suns,0.5,1996,1995-96,NBA
 South Florida,Heat,0.512,1996,1995-96,NBA
 Sacramento,Kings,0.476,1996,1995-96,NBA
 Bay Area,Warriors,0.439,1996,1995-96,NBA
-Charlotte,Hornets,0.5,1996,1995-96,NBA
+Carolina,Hornets,0.5,1996,1995-96,NBA
 Denver,Nuggets,0.427,1996,1995-96,NBA
 Washington,Bullets,0.476,1996,1995-96,NBA
-Los Angeles,Clippers,0.354,1996,1995-96,NBA
 Boston,Celtics,0.402,1996,1995-96,NBA
+Los Angeles,Clippers,0.354,1996,1995-96,NBA
 Dallas,Mavericks,0.317,1996,1995-96,NBA
 Minnesota,Timberwolves,0.317,1996,1995-96,NBA
 New Jersey,Nets,0.366,1996,1995-96,NBA
@@ -3535,15 +3535,15 @@ Vancouver,Grizzlies,0.183,1996,1995-96,NBA
 Philadelphia,76ers,0.22,1996,1995-96,NBA
 Chicago,Bulls,0.841,1997,1996-97,NBA
 Utah,Jazz,0.78,1997,1996-97,NBA
-South Florida,Heat,0.744,1997,1996-97,NBA
 Houston,Rockets,0.695,1997,1996-97,NBA
+South Florida,Heat,0.744,1997,1996-97,NBA
 Seattle,SuperSonics,0.695,1997,1996-97,NBA
 New York,Knicks,0.695,1997,1996-97,NBA
-Los Angeles,Lakers,0.683,1997,1996-97,NBA
 Atlanta,Hawks,0.683,1997,1996-97,NBA
+Los Angeles,Lakers,0.683,1997,1996-97,NBA
 Portland,Trail Blazers,0.598,1997,1996-97,NBA
 Detroit,Pistons,0.659,1997,1996-97,NBA
-Charlotte,Hornets,0.659,1997,1996-97,NBA
+Carolina,Hornets,0.659,1997,1996-97,NBA
 Minnesota,Timberwolves,0.488,1997,1996-97,NBA
 Phoenix,Suns,0.488,1997,1996-97,NBA
 Orlando,Magic,0.549,1997,1996-97,NBA
@@ -3559,8 +3559,8 @@ Denver,Nuggets,0.256,1997,1996-97,NBA
 Toronto,Raptors,0.366,1997,1996-97,NBA
 New Jersey,Nets,0.317,1997,1996-97,NBA
 San Antonio,Spurs,0.244,1997,1996-97,NBA
-Vancouver,Grizzlies,0.171,1997,1996-97,NBA
 Philadelphia,76ers,0.268,1997,1996-97,NBA
+Vancouver,Grizzlies,0.171,1997,1996-97,NBA
 Boston,Celtics,0.183,1997,1996-97,NBA
 Chicago,Bulls,0.756,1998,1997-98,NBA
 Utah,Jazz,0.756,1998,1997-98,NBA
@@ -3570,7 +3570,7 @@ Seattle,SuperSonics,0.744,1998,1997-98,NBA
 Indiana,Pacers,0.707,1998,1997-98,NBA
 Phoenix,Suns,0.683,1998,1997-98,NBA
 San Antonio,Spurs,0.683,1998,1997-98,NBA
-Charlotte,Hornets,0.622,1998,1997-98,NBA
+Carolina,Hornets,0.622,1998,1997-98,NBA
 Atlanta,Hawks,0.61,1998,1997-98,NBA
 Cleveland,Cavaliers,0.573,1998,1997-98,NBA
 Portland,Trail Blazers,0.561,1998,1997-98,NBA
@@ -3608,7 +3608,7 @@ Milwaukee,Bucks,0.56,1999,1998-99,NBA
 Minnesota,Timberwolves,0.5,1999,1998-99,NBA
 Seattle,SuperSonics,0.5,1999,1998-99,NBA
 New York,Knicks,0.54,1999,1998-99,NBA
-Charlotte,Hornets,0.52,1999,1998-99,NBA
+Carolina,Hornets,0.52,1999,1998-99,NBA
 Bay Area,Warriors,0.42,1999,1998-99,NBA
 Toronto,Raptors,0.46,1999,1998-99,NBA
 Dallas,Mavericks,0.38,1999,1998-99,NBA
@@ -3624,30 +3624,30 @@ Los Angeles,Lakers,0.817,2000,1999-00,NBA
 Indiana,Pacers,0.683,2000,1999-00,NBA
 South Florida,Heat,0.634,2000,1999-00,NBA
 Utah,Jazz,0.671,2000,1999-00,NBA
-Portland,Trail Blazers,0.72,2000,1999-00,NBA
 New York,Knicks,0.61,2000,1999-00,NBA
-Phoenix,Suns,0.646,2000,1999-00,NBA
+Portland,Trail Blazers,0.72,2000,1999-00,NBA
 Philadelphia,76ers,0.598,2000,1999-00,NBA
+Phoenix,Suns,0.646,2000,1999-00,NBA
 San Antonio,Spurs,0.646,2000,1999-00,NBA
-Charlotte,Hornets,0.598,2000,1999-00,NBA
+Carolina,Hornets,0.598,2000,1999-00,NBA
 Minnesota,Timberwolves,0.61,2000,1999-00,NBA
 Toronto,Raptors,0.549,2000,1999-00,NBA
+Milwaukee,Bucks,0.512,2000,1999-00,NBA
 Seattle,SuperSonics,0.549,2000,1999-00,NBA
 Detroit,Pistons,0.512,2000,1999-00,NBA
-Milwaukee,Bucks,0.512,2000,1999-00,NBA
 Sacramento,Kings,0.537,2000,1999-00,NBA
 Dallas,Mavericks,0.488,2000,1999-00,NBA
 Orlando,Magic,0.5,2000,1999-00,NBA
-Denver,Nuggets,0.427,2000,1999-00,NBA
 Boston,Celtics,0.427,2000,1999-00,NBA
+Denver,Nuggets,0.427,2000,1999-00,NBA
 Cleveland,Cavaliers,0.39,2000,1999-00,NBA
 Houston,Rockets,0.415,2000,1999-00,NBA
-Vancouver,Grizzlies,0.268,2000,1999-00,NBA
 New Jersey,Nets,0.378,2000,1999-00,NBA
+Vancouver,Grizzlies,0.268,2000,1999-00,NBA
 Bay Area,Warriors,0.232,2000,1999-00,NBA
 Washington,Wizards,0.354,2000,1999-00,NBA
-Los Angeles,Clippers,0.183,2000,1999-00,NBA
 Atlanta,Hawks,0.341,2000,1999-00,NBA
+Los Angeles,Clippers,0.183,2000,1999-00,NBA
 Chicago,Bulls,0.207,2000,1999-00,NBA
 Philadelphia,76ers,0.683,2001,2000-01,NBA
 San Antonio,Spurs,0.707,2001,2000-01,NBA
@@ -3660,7 +3660,7 @@ New York,Knicks,0.585,2001,2000-01,NBA
 Utah,Jazz,0.646,2001,2000-01,NBA
 Toronto,Raptors,0.573,2001,2000-01,NBA
 Phoenix,Suns,0.622,2001,2000-01,NBA
-Charlotte,Hornets,0.561,2001,2000-01,NBA
+Carolina,Hornets,0.561,2001,2000-01,NBA
 Portland,Trail Blazers,0.61,2001,2000-01,NBA
 Orlando,Magic,0.524,2001,2000-01,NBA
 Minnesota,Timberwolves,0.573,2001,2000-01,NBA
@@ -3685,7 +3685,7 @@ Detroit,Pistons,0.61,2002,2001-02,NBA
 Los Angeles,Lakers,0.707,2002,2001-02,NBA
 Boston,Celtics,0.598,2002,2001-02,NBA
 Dallas,Mavericks,0.695,2002,2001-02,NBA
-Charlotte,Hornets,0.537,2002,2001-02,NBA
+Carolina,Hornets,0.537,2002,2001-02,NBA
 Minnesota,Timberwolves,0.61,2002,2001-02,NBA
 Orlando,Magic,0.537,2002,2001-02,NBA
 Portland,Trail Blazers,0.598,2002,2001-02,NBA
@@ -3711,14 +3711,14 @@ San Antonio,Spurs,0.732,2003,2002-03,NBA
 Detroit,Pistons,0.61,2003,2002-03,NBA
 New Jersey,Nets,0.598,2003,2002-03,NBA
 Sacramento,Kings,0.72,2003,2002-03,NBA
-Indiana,Pacers,0.585,2003,2002-03,NBA
 Dallas,Mavericks,0.732,2003,2002-03,NBA
-Philadelphia,76ers,0.585,2003,2002-03,NBA
+Indiana,Pacers,0.585,2003,2002-03,NBA
 Minnesota,Timberwolves,0.622,2003,2002-03,NBA
-Los Angeles,Lakers,0.61,2003,2002-03,NBA
+Philadelphia,76ers,0.585,2003,2002-03,NBA
 New Orleans,Hornets,0.573,2003,2002-03,NBA
-Portland,Trail Blazers,0.61,2003,2002-03,NBA
+Los Angeles,Lakers,0.61,2003,2002-03,NBA
 Boston,Celtics,0.537,2003,2002-03,NBA
+Portland,Trail Blazers,0.61,2003,2002-03,NBA
 Milwaukee,Bucks,0.512,2003,2002-03,NBA
 Utah,Jazz,0.573,2003,2002-03,NBA
 Orlando,Magic,0.512,2003,2002-03,NBA
@@ -3744,26 +3744,26 @@ San Antonio,Spurs,0.695,2004,2003-04,NBA
 Detroit,Pistons,0.659,2004,2003-04,NBA
 South Florida,Heat,0.512,2004,2003-04,NBA
 Sacramento,Kings,0.671,2004,2003-04,NBA
-Dallas,Mavericks,0.634,2004,2003-04,NBA
 New Orleans,Hornets,0.5,2004,2003-04,NBA
-Memphis,Grizzlies,0.61,2004,2003-04,NBA
+Dallas,Mavericks,0.634,2004,2003-04,NBA
 Milwaukee,Bucks,0.5,2004,2003-04,NBA
+Memphis,Grizzlies,0.61,2004,2003-04,NBA
 Houston,Rockets,0.549,2004,2003-04,NBA
 New York,Knicks,0.476,2004,2003-04,NBA
-Denver,Nuggets,0.524,2004,2003-04,NBA
 Boston,Celtics,0.439,2004,2003-04,NBA
+Denver,Nuggets,0.524,2004,2003-04,NBA
 Cleveland,Cavaliers,0.427,2004,2003-04,NBA
 Utah,Jazz,0.512,2004,2003-04,NBA
 Portland,Trail Blazers,0.5,2004,2003-04,NBA
 Toronto,Raptors,0.402,2004,2003-04,NBA
 Bay Area,Warriors,0.451,2004,2003-04,NBA
 Philadelphia,76ers,0.402,2004,2003-04,NBA
-Seattle,SuperSonics,0.451,2004,2003-04,NBA
 Atlanta,Hawks,0.341,2004,2003-04,NBA
+Seattle,SuperSonics,0.451,2004,2003-04,NBA
 Phoenix,Suns,0.354,2004,2003-04,NBA
 Washington,Wizards,0.305,2004,2003-04,NBA
-Los Angeles,Clippers,0.341,2004,2003-04,NBA
 Chicago,Bulls,0.28,2004,2003-04,NBA
+Los Angeles,Clippers,0.341,2004,2003-04,NBA
 Orlando,Magic,0.256,2004,2003-04,NBA
 South Florida,Heat,0.72,2005,2004-05,NBA
 Phoenix,Suns,0.756,2005,2004-05,NBA
@@ -3787,12 +3787,12 @@ Los Angeles,Clippers,0.451,2005,2004-05,NBA
 Orlando,Magic,0.439,2005,2004-05,NBA
 Los Angeles,Lakers,0.415,2005,2004-05,NBA
 Toronto,Raptors,0.402,2005,2004-05,NBA
-New York,Knicks,0.402,2005,2004-05,NBA
 Bay Area,Warriors,0.415,2005,2004-05,NBA
+New York,Knicks,0.402,2005,2004-05,NBA
 Milwaukee,Bucks,0.366,2005,2004-05,NBA
 Portland,Trail Blazers,0.329,2005,2004-05,NBA
 Utah,Jazz,0.317,2005,2004-05,NBA
-Charlotte,Bobcats,0.22,2005,2004-05,NBA
+Carolina,Bobcats,0.22,2005,2004-05,NBA
 Atlanta,Hawks,0.159,2005,2004-05,NBA
 New Orleans,Hornets,0.22,2005,2004-05,NBA
 San Antonio,Spurs,0.768,2006,2005-06,NBA
@@ -3820,7 +3820,7 @@ Seattle,SuperSonics,0.427,2006,2005-06,NBA
 Houston,Rockets,0.415,2006,2005-06,NBA
 Toronto,Raptors,0.329,2006,2005-06,NBA
 Bay Area,Warriors,0.415,2006,2005-06,NBA
-Charlotte,Bobcats,0.317,2006,2005-06,NBA
+Carolina,Bobcats,0.317,2006,2005-06,NBA
 Atlanta,Hawks,0.317,2006,2005-06,NBA
 Minnesota,Timberwolves,0.402,2006,2005-06,NBA
 New York,Knicks,0.28,2006,2005-06,NBA
@@ -3846,7 +3846,7 @@ Los Angeles,Clippers,0.488,2007,2006-07,NBA
 Philadelphia,76ers,0.427,2007,2006-07,NBA
 New Orleans,Hornets,0.476,2007,2006-07,NBA
 Sacramento,Kings,0.402,2007,2006-07,NBA
-Charlotte,Bobcats,0.402,2007,2006-07,NBA
+Carolina,Bobcats,0.402,2007,2006-07,NBA
 New York,Knicks,0.402,2007,2006-07,NBA
 Portland,Trail Blazers,0.39,2007,2006-07,NBA
 Atlanta,Hawks,0.366,2007,2006-07,NBA
@@ -3865,8 +3865,8 @@ Utah,Jazz,0.659,2008,2007-08,NBA
 Cleveland,Cavaliers,0.549,2008,2007-08,NBA
 Houston,Rockets,0.671,2008,2007-08,NBA
 Washington,Wizards,0.524,2008,2007-08,NBA
-Phoenix,Suns,0.671,2008,2007-08,NBA
 Toronto,Raptors,0.5,2008,2007-08,NBA
+Phoenix,Suns,0.671,2008,2007-08,NBA
 Philadelphia,76ers,0.488,2008,2007-08,NBA
 Dallas,Mavericks,0.622,2008,2007-08,NBA
 Denver,Nuggets,0.61,2008,2007-08,NBA
@@ -3878,7 +3878,7 @@ Portland,Trail Blazers,0.5,2008,2007-08,NBA
 Chicago,Bulls,0.402,2008,2007-08,NBA
 Sacramento,Kings,0.463,2008,2007-08,NBA
 Los Angeles,Clippers,0.28,2008,2007-08,NBA
-Charlotte,Bobcats,0.39,2008,2007-08,NBA
+Carolina,Bobcats,0.39,2008,2007-08,NBA
 Milwaukee,Bucks,0.317,2008,2007-08,NBA
 Minnesota,Timberwolves,0.268,2008,2007-08,NBA
 New York,Knicks,0.28,2008,2007-08,NBA
@@ -3904,7 +3904,7 @@ Detroit,Pistons,0.476,2009,2008-09,NBA
 Indiana,Pacers,0.439,2009,2008-09,NBA
 Phoenix,Suns,0.561,2009,2008-09,NBA
 Bay Area,Warriors,0.354,2009,2008-09,NBA
-Charlotte,Bobcats,0.427,2009,2008-09,NBA
+Carolina,Bobcats,0.427,2009,2008-09,NBA
 New Jersey,Nets,0.415,2009,2008-09,NBA
 Minnesota,Timberwolves,0.293,2009,2008-09,NBA
 Milwaukee,Bucks,0.415,2009,2008-09,NBA
@@ -3928,7 +3928,7 @@ South Florida,Heat,0.573,2010,2009-10,NBA
 Milwaukee,Bucks,0.561,2010,2009-10,NBA
 Portland,Trail Blazers,0.61,2010,2009-10,NBA
 San Antonio,Spurs,0.61,2010,2009-10,NBA
-Charlotte,Bobcats,0.537,2010,2009-10,NBA
+Carolina,Bobcats,0.537,2010,2009-10,NBA
 Chicago,Bulls,0.5,2010,2009-10,NBA
 Oklahoma City,Thunder,0.61,2010,2009-10,NBA
 Houston,Rockets,0.512,2010,2009-10,NBA
@@ -3964,7 +3964,7 @@ Memphis,Grizzlies,0.561,2011,2010-11,NBA
 Houston,Rockets,0.524,2011,2010-11,NBA
 Milwaukee,Bucks,0.427,2011,2010-11,NBA
 Phoenix,Suns,0.488,2011,2010-11,NBA
-Charlotte,Bobcats,0.415,2011,2010-11,NBA
+Carolina,Bobcats,0.415,2011,2010-11,NBA
 Detroit,Pistons,0.366,2011,2010-11,NBA
 Utah,Jazz,0.476,2011,2010-11,NBA
 New Jersey,Nets,0.293,2011,2010-11,NBA
@@ -4004,7 +4004,7 @@ Cleveland,Cavaliers,0.318,2012,2011-12,NBA
 Sacramento,Kings,0.333,2012,2011-12,NBA
 Washington,Wizards,0.303,2012,2011-12,NBA
 New Orleans,Hornets,0.318,2012,2011-12,NBA
-Charlotte,Bobcats,0.106,2012,2011-12,NBA
+Carolina,Bobcats,0.106,2012,2011-12,NBA
 Oklahoma City,Thunder,0.732,2013,2012-13,NBA
 South Florida,Heat,0.805,2013,2012-13,NBA
 San Antonio,Spurs,0.707,2013,2012-13,NBA
@@ -4031,7 +4031,7 @@ Washington,Wizards,0.354,2013,2012-13,NBA
 Minnesota,Timberwolves,0.378,2013,2012-13,NBA
 Cleveland,Cavaliers,0.293,2013,2012-13,NBA
 Sacramento,Kings,0.341,2013,2012-13,NBA
-Charlotte,Bobcats,0.256,2013,2012-13,NBA
+Carolina,Bobcats,0.256,2013,2012-13,NBA
 New Orleans,Hornets,0.329,2013,2012-13,NBA
 Orlando,Magic,0.244,2013,2012-13,NBA
 Phoenix,Suns,0.305,2013,2012-13,NBA
@@ -4048,7 +4048,7 @@ Portland,Trail Blazers,0.659,2014,2013-14,NBA
 Brooklyn,Nets,0.537,2014,2013-14,NBA
 Bay Area,Warriors,0.622,2014,2013-14,NBA
 Memphis,Grizzlies,0.61,2014,2013-14,NBA
-Charlotte,Bobcats,0.524,2014,2013-14,NBA
+Carolina,Bobcats,0.524,2014,2013-14,NBA
 Atlanta,Hawks,0.463,2014,2013-14,NBA
 Dallas,Mavericks,0.598,2014,2013-14,NBA
 New York,Knicks,0.451,2014,2013-14,NBA
@@ -4085,7 +4085,7 @@ Indiana,Pacers,0.463,2015,2014-15,NBA
 Oklahoma City,Thunder,0.549,2015,2014-15,NBA
 South Florida,Heat,0.451,2015,2014-15,NBA
 Phoenix,Suns,0.476,2015,2014-15,NBA
-Charlotte,Hornets,0.402,2015,2014-15,NBA
+Carolina,Hornets,0.402,2015,2014-15,NBA
 Utah,Jazz,0.463,2015,2014-15,NBA
 Denver,Nuggets,0.366,2015,2014-15,NBA
 Detroit,Pistons,0.39,2015,2014-15,NBA
@@ -4106,7 +4106,7 @@ Los Angeles,Clippers,0.646,2016,2015-16,NBA
 Boston,Celtics,0.585,2016,2015-16,NBA
 Portland,Trail Blazers,0.537,2016,2015-16,NBA
 Dallas,Mavericks,0.512,2016,2015-16,NBA
-Charlotte,Hornets,0.585,2016,2015-16,NBA
+Carolina,Hornets,0.585,2016,2015-16,NBA
 Indiana,Pacers,0.549,2016,2015-16,NBA
 Memphis,Grizzlies,0.512,2016,2015-16,NBA
 Houston,Rockets,0.5,2016,2015-16,NBA
@@ -4146,7 +4146,7 @@ South Florida,Heat,0.5,2017,2016-17,NBA
 Detroit,Pistons,0.451,2017,2016-17,NBA
 New Orleans,Pelicans,0.415,2017,2016-17,NBA
 Dallas,Mavericks,0.402,2017,2016-17,NBA
-Charlotte,Hornets,0.439,2017,2016-17,NBA
+Carolina,Hornets,0.439,2017,2016-17,NBA
 New York,Knicks,0.378,2017,2016-17,NBA
 Sacramento,Kings,0.39,2017,2016-17,NBA
 Minnesota,Timberwolves,0.378,2017,2016-17,NBA
@@ -4174,7 +4174,7 @@ Washington,Wizards,0.524,2018,2017-18,NBA
 Denver,Nuggets,0.561,2018,2017-18,NBA
 Detroit,Pistons,0.476,2018,2017-18,NBA
 Los Angeles,Clippers,0.512,2018,2017-18,NBA
-Charlotte,Hornets,0.439,2018,2017-18,NBA
+Carolina,Hornets,0.439,2018,2017-18,NBA
 Los Angeles,Lakers,0.427,2018,2017-18,NBA
 New York,Knicks,0.354,2018,2017-18,NBA
 Brooklyn,Nets,0.341,2018,2017-18,NBA
@@ -4201,7 +4201,7 @@ San Antonio,Spurs,0.585,2019,2018-19,NBA
 Orlando,Magic,0.512,2019,2018-19,NBA
 Detroit,Pistons,0.5,2019,2018-19,NBA
 Los Angeles,Clippers,0.585,2019,2018-19,NBA
-Charlotte,Hornets,0.476,2019,2018-19,NBA
+Carolina,Hornets,0.476,2019,2018-19,NBA
 Sacramento,Kings,0.476,2019,2018-19,NBA
 Los Angeles,Lakers,0.451,2019,2018-19,NBA
 South Florida,Heat,0.476,2019,2018-19,NBA
@@ -4233,7 +4233,7 @@ Orlando,Magic,0.452,2020,2019-20,NBA
 Portland,Trail Blazers,0.473,2020,2019-20,NBA
 Memphis,Grizzlies,0.466,2020,2019-20,NBA
 Washington,Wizards,0.347,2020,2019-20,NBA
-Charlotte,Hornets,0.354,2020,2019-20,NBA
+Carolina,Hornets,0.354,2020,2019-20,NBA
 Phoenix,Suns,0.466,2020,2019-20,NBA
 San Antonio,Spurs,0.451,2020,2019-20,NBA
 Chicago,Bulls,0.338,2020,2019-20,NBA
@@ -4262,19 +4262,19 @@ New York,Knicks,0.569,2021,2020-21,NBA
 Utah,Jazz,0.722,2021,2020-21,NBA
 Detroit,Pistons,0.278,2021,2020-21,NBA
 Atlanta,Hawks,0.569,2021,2020-21,NBA
-Cleveland,Cavaliers,0.306,2021,2020-21,NBA
-New Orleans,Pelicans,0.431,2021,2020-21,NBA
-Dallas,Mavericks,0.583,2021,2020-21,NBA
 South Florida,Heat,0.556,2021,2020-21,NBA
 Minnesota,Timberwolves,0.319,2021,2020-21,NBA
 Orlando,Magic,0.292,2021,2020-21,NBA
 Phoenix,Suns,0.708,2021,2020-21,NBA
 Portland,Trail Blazers,0.583,2021,2020-21,NBA
 Sacramento,Kings,0.431,2021,2020-21,NBA
-Toronto,Raptors,0.375,2021,2020-21,NBA
 Memphis,Grizzlies,0.528,2021,2020-21,NBA
+Carolina,Hornets,0.458,2021,2020-21,NBA
+Cleveland,Cavaliers,0.306,2021,2020-21,NBA
+New Orleans,Pelicans,0.431,2021,2020-21,NBA
+Dallas,Mavericks,0.583,2021,2020-21,NBA
+Toronto,Raptors,0.375,2021,2020-21,NBA
 Washington,Wizards,0.472,2021,2020-21,NBA
-Charlotte,Hornets,0.458,2021,2020-21,NBA
 South Florida,Heat,0.646,2022,2021-22,NBA
 Phoenix,Suns,0.78,2022,2021-22,NBA
 Boston,Celtics,0.622,2022,2021-22,NBA
@@ -4294,7 +4294,7 @@ Los Angeles,Clippers,0.512,2022,2021-22,NBA
 New Orleans,Pelicans,0.439,2022,2021-22,NBA
 Atlanta,Hawks,0.524,2022,2021-22,NBA
 San Antonio,Spurs,0.415,2022,2021-22,NBA
-Charlotte,Hornets,0.524,2022,2021-22,NBA
+Carolina,Hornets,0.524,2022,2021-22,NBA
 Los Angeles,Lakers,0.402,2022,2021-22,NBA
 New York,Knicks,0.451,2022,2021-22,NBA
 Sacramento,Kings,0.366,2022,2021-22,NBA
@@ -4332,7 +4332,7 @@ Washington,Wizards,0.427,2023,2022-23,NBA
 Orlando,Magic,0.415,2023,2022-23,NBA
 Portland,Trail Blazers,0.402,2023,2022-23,NBA
 Houston,Rockets,0.268,2023,2022-23,NBA
-Charlotte,Hornets,0.329,2023,2022-23,NBA
+Carolina,Hornets,0.329,2023,2022-23,NBA
 Detroit,Pistons,0.207,2023,2022-23,NBA
 San Antonio,Spurs,0.268,2023,2022-23,NBA
 Boston,Celtics,0.78,2024,2023-24,NBA
@@ -4343,8 +4343,8 @@ Milwaukee,Bucks,0.598,2024,2023-24,NBA
 Minnesota,Timberwolves,0.683,2024,2023-24,NBA
 Cleveland,Cavaliers,0.585,2024,2023-24,NBA
 Los Angeles,Clippers,0.622,2024,2023-24,NBA
-Dallas,Mavericks,0.61,2024,2023-24,NBA
 Orlando,Magic,0.573,2024,2023-24,NBA
+Dallas,Mavericks,0.61,2024,2023-24,NBA
 Indiana,Pacers,0.573,2024,2023-24,NBA
 Phoenix,Suns,0.598,2024,2023-24,NBA
 Philadelphia,76ers,0.573,2024,2023-24,NBA
@@ -4353,14 +4353,14 @@ Los Angeles,Lakers,0.573,2024,2023-24,NBA
 South Florida,Heat,0.561,2024,2023-24,NBA
 Chicago,Bulls,0.476,2024,2023-24,NBA
 Sacramento,Kings,0.561,2024,2023-24,NBA
-Atlanta,Hawks,0.439,2024,2023-24,NBA
 Bay Area,Warriors,0.561,2024,2023-24,NBA
+Atlanta,Hawks,0.439,2024,2023-24,NBA
 Brooklyn,Nets,0.39,2024,2023-24,NBA
 Houston,Rockets,0.5,2024,2023-24,NBA
 Utah,Jazz,0.378,2024,2023-24,NBA
 Toronto,Raptors,0.305,2024,2023-24,NBA
 Memphis,Grizzlies,0.329,2024,2023-24,NBA
-Charlotte,Hornets,0.256,2024,2023-24,NBA
+Carolina,Hornets,0.256,2024,2023-24,NBA
 San Antonio,Spurs,0.268,2024,2023-24,NBA
 Washington,Wizards,0.183,2024,2023-24,NBA
 Detroit,Pistons,0.171,2024,2023-24,NBA
