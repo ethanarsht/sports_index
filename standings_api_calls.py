@@ -291,10 +291,10 @@ def mlb_combine(start, stop=None):
     for s in range(start, stop, 1):
         df_season = get_mlb_standings(s)
         df_all_mlb = pd.concat([df_all_mlb, df_season])
-    
+
     df_final = df_all_mlb.rename(columns={'team_name':'team'})[['team', 'percentage', 'season', 'season_year']]
-    df_final.loc[:, 'city'] = df_final['team'].apply(extract_city)
-    df_final.loc[:, 'name'] = df_final.apply(lambda row: row['team'].replace(row['city'], ''), axis=1)
+    df_final.loc[:, 'city'] = df_final['team'].apply(extract_city).str.strip()
+    df_final.loc[:, 'name'] = df_final.apply(lambda row: row['team'].replace(row['city'], ''), axis=1).str.strip()
     df_final.loc[:, 'league'] = 'MLB'
     df_final = df_final.drop('team', axis=1)
     return df_final
@@ -414,8 +414,9 @@ def main(start=1969, stop=2025, league='all', csv=True, cached=False):
 
     start: int, start year, default to 1969
     stop: int, stop year, default to 2025
-    league: str, league(s) to include, default to 'all' for all leagues,
-    csv: bool, save to csv if True, default to True, otherwise return DataFrame
+    league: str, league(s) to include, default to 'all' for all leagues
+    csv: bool, save to csv and returns dataframe if True, otherwise only returns dataframe
+    cached: bool, use existing csv if true, default to False
 
     Returns:
     DataFrame with all standings in specified years.
