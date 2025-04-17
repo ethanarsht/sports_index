@@ -26,7 +26,8 @@ city_grouping = {
     'New Orleans': ['New Orleans/Oklahoma City'],
     'Montreal': ['Montréal'],
     'Phoenix': ['Arizona'],
-    'Carolina': ['Charlotte']
+    'Carolina': ['Charlotte'],
+    'Indiana': ['Indianapolis']
 }
 
 inverted_grouping = {}
@@ -402,7 +403,9 @@ def construct_dataset(start, stop, league='all'):
         df_nfl = nfl_combine(start, stop)
         df = pd.concat([df, df_nfl])
 
-    df['city'] = df.loc[:, 'city'].replace(inverted_grouping)
+    df['city_group'] = df.loc[:, 'city'].replace(inverted_grouping)
+    # Move Golden Seals to Bay Area
+    df.loc[df['name'] == 'Golden Seals', 'city_group'] = 'Bay Area'
     df.loc[:, 'season_year'] = df['season_year'].astype(int)
 
     return df

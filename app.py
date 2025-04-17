@@ -1,11 +1,15 @@
 from dash import Dash, html, dcc, callback, Input, Output
 import dash_daq as daq
+import dash_bootstrap_components as dbc
+
 import plotly.express as px
 from analysis_helper import assign_z_score, assign_season_order, assign_rolling_mean
 import standings_api_calls
 import numpy as np
 
-app = Dash()
+app = Dash(
+    external_stylesheets=[dbc.themes.SOLAR]
+)
 
 df = standings_api_calls.main(
     league='all',
@@ -18,24 +22,30 @@ df['city_team'] = df['city'] + ' ' + df['name']
 
 df_checklists = df.drop_duplicates(subset=['city_team'])
 
-app.layout = [
+app.layout = dbc.Container([
     html.H1('A History of Sports Happiness'),
-    dcc.Graph(id='happiness-graph'),
+    # Create a graph with the rolling period control directly to its right
     html.Div([
-        daq.NumericInput(id='rolling-period',
-                  min=1,
-                  max=10,
-                  value=4,
-                  label="Rolling Period",
-                  labelPosition='top'
-        )
-    ], style={'horizontalAlign': 'left'}),
+        html.Div([
+            dcc.Graph(id='happiness-graph')
+        ],  style={'width': '90%', 'display': 'inline-block'}),
+
+        html.Div([
+            daq.NumericInput(id='rolling-period',
+                    min=1,
+                    max=10,
+                    value=4,
+                    label="Rolling Period",
+                    labelPosition='top'
+            )
+    ], style={'verticalAlign': 'top', 'width': '10%', 'display': 'inline-block'}),
+    ]),
     html.Div([
         html.Div([
             html.Label('City'),
             dcc.Checklist(id='city-selection',
                     options=[
-                        {'label': city, 'value': city} for city in np.sort(df_checklists['city'].unique())
+                        {'label': city, 'value': city} for city in np.sort(df_checklists['city_group'].unique())
                         ],
                         value=[]
                     )],
@@ -83,7 +93,7 @@ app.layout = [
         )
     ]
     )
-]
+])
 
 @callback(
     Output('happiness-graph', 'figure'),
@@ -126,17 +136,20 @@ def update_selection(city_selection):
         Selections for each league
     '''
     mlb_selection = df_checklists.loc[
-        df_checklists[
-            'city'].isin(city_selection) & (df_checklists['league'] == 'MLB'), 'city_team'].tolist()
+        df_checklists['city_group'].isin(city_selection) &
+              (df_checklists['league'] == 'MLB'), 'city_team'].tolist()
     nhl_selection = df_checklists.loc[
         df_checklists[
-            'city'].isin(city_selection) & (df_checklists['league'] == 'NHL'), 'city_team'].tolist()
+            'city_group'].isin(city_selection) &
+              (df_checklists['league'] == 'NHL'), 'city_team'].tolist()
     nba_selection = df_checklists.loc[
         df_checklists[
-            'city'].isin(city_selection) & (df_checklists['league'] == 'NBA'), 'city_team'].tolist()
+            'city_group'].isin(city_selection) &
+              (df_checklists['league'] == 'NBA'), 'city_team'].tolist()
     nfl_selection = df_checklists.loc[
         df_checklists[
-            'city'].isin(city_selection) & (df_checklists['league'] == 'NFL'), 'city_team'].tolist()
+            'city_group'].isin(city_selection) &
+              (df_checklists['league'] == 'NFL'), 'city_team'].tolist()
     return mlb_selection, nhl_selection, nba_selection, nfl_selection
 
 if __name__ == '__main__':
