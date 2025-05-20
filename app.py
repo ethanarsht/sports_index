@@ -2,10 +2,6 @@ import base64
 import io
 import random
 
-import matplotlib.pyplot as plt
-import numpy as np
-
-
 from dash import Dash, html, dcc, callback, Input, Output
 import dash_daq as daq
 import dash_bootstrap_components as dbc

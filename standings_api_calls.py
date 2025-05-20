@@ -6,11 +6,7 @@ from nba_api.stats.endpoints import LeagueStandings
 import statsapi
 
 import requests
-import spacy
-
 import pandas as pd
-
-nlp = spacy.load("en_core_web_sm")
 
 city_grouping = {
     'Boston': ['New England'],

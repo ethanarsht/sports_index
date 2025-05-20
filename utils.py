@@ -1,9 +1,12 @@
-import pandas as pd
+import json
 import numpy as np
-import seaborn as sns
+
+import matplotlib
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
-import json
+import seaborn as sns
+
 
 colors = json.load(open('data/teams.json'))
 
@@ -28,7 +31,7 @@ def assign_season_order(df):
     Input dataframe, returns dataframe with ordering columns
     '''
 
-    df.loc[:, 'season_order'] = np.NaN
+    df.loc[:, 'season_order'] = np.nan
     df.loc[df['league'] == 'NHL', 'season_order'] = 0
     df.loc[df['league'] == 'NBA', 'season_order'] = 1
     df.loc[df['league'] == 'MLB', 'season_order'] = 2
@@ -64,7 +67,7 @@ def assign_rolling_mean(df, team_selection, rolling_period=4):
     '''
     df['selected'] = df['city_team'].apply(lambda x: 1 if x in team_selection else 0)
     df = df.loc[df['selected'] == 1,:].sort_values(by=['season_year', 'season_order'])
-    df['rolling_mean'] = np.NaN
+    df['rolling_mean'] = np.nan
     df['rolling_mean'] = df.groupby(
         'selected')['z_score'].transform(
             lambda x: x.rolling(rolling_period, min_periods=1).mean())
@@ -124,7 +127,6 @@ def determine_limits(df, year):
     df_year = df[df['season_year'] == year]
     min_val = df_year['z_score'].min()
     max_val = df_year['z_score'].max()
-    print(df_year)
 
     setter = max(abs(min_val), abs(max_val))
     if setter < 0:
