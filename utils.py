@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
 import json
 
-colors = json.load(open('teams.json'))
+colors = json.load(open('data/teams.json'))
 
 def assign_z_score(df):
     '''
@@ -124,6 +124,7 @@ def determine_limits(df, year):
     df_year = df[df['season_year'] == year]
     min_val = df_year['z_score'].min()
     max_val = df_year['z_score'].max()
+    print(df_year)
 
     setter = max(abs(min_val), abs(max_val))
     if setter < 0:
@@ -131,8 +132,7 @@ def determine_limits(df, year):
     return setter
 
 def create_subplots(fig, ax, grid_spec, year, df, standings):
-
-    xlim_setter = determine_limits(df, year)
+    xlim_setter = determine_limits(standings, year)
      
     for ix, (team, league) in enumerate(zip(df['name'], df['league'])):
         row = (ix // 2) + 1
@@ -147,7 +147,7 @@ def create_subplots(fig, ax, grid_spec, year, df, standings):
 
         sns.set_style("dark")
 
-        sns.histplot(df_kde, x='z_score', ax=ax, label=f'{league} {year}', alpha=0.25, bins=15, color='blue', kde=True)
+        sns.histplot(df_kde, x='z_score', ax=ax, label=f'{league} {year}', alpha=0.25, color='blue', kde=True)
 
         ax.axvline(df.iloc[ix]['z_score'], color=team_color, gapcolor=gapcolor, linestyle='--', label=team)
         ax.set_title(f'{team} {year}')

@@ -12,7 +12,6 @@ import pandas as pd
 
 nlp = spacy.load("en_core_web_sm")
 
-
 city_grouping = {
     'Boston': ['New England'],
     'South Florida': ['Miami', 'Florida'],
@@ -27,7 +26,8 @@ city_grouping = {
     'Montreal': ['Montréal'],
     'Phoenix': ['Arizona'],
     'Carolina': ['Charlotte'],
-    'Indiana': ['Indianapolis']
+    'Indiana': ['Indianapolis'],
+    'Las Vegas': ['Vegas']
 }
 
 inverted_grouping = {}
@@ -426,7 +426,7 @@ def main(start=1969, stop=2025, league='all', csv=True, cached=False):
     """
 
     if cached:
-        if 'data/all_standings.csv' in os.listdir():
+        if 'all_standings.csv' in os.listdir('data'):
             df = pd.read_csv('data/all_standings.csv')
             return df
 

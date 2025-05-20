@@ -11,7 +11,7 @@ import dash_daq as daq
 import dash_bootstrap_components as dbc
 import plotly.express as px
 
-from analysis_helper import assign_z_score, assign_season_order, assign_rolling_mean, plot_city_year
+from utils import assign_z_score, assign_season_order, assign_rolling_mean, plot_city_year
 import standings_api_calls
 
 
@@ -186,6 +186,7 @@ def render_content(tab):
     Input('city-chart', 'value'),
     Input('year-chart', 'value')
 )
+
 def update_city_graph(city, year):
     fig = plot_city_year(city, year, df, grouped_standings)
 
