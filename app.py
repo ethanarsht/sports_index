@@ -1,15 +1,25 @@
+import base64
+import io
+import random
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+
 from dash import Dash, html, dcc, callback, Input, Output
 import dash_daq as daq
 import dash_bootstrap_components as dbc
-
 import plotly.express as px
-from analysis_helper import assign_z_score, assign_season_order, assign_rolling_mean
+
+from analysis_helper import assign_z_score, assign_season_order, assign_rolling_mean, plot_city_year
 import standings_api_calls
-import numpy as np
+
+
 
 app = Dash(
     external_stylesheets=[dbc.themes.SOLAR]
 )
+server = app.server
 
 df = standings_api_calls.main(
     league='all',
@@ -20,80 +30,172 @@ df = assign_z_score(df)
 df = assign_season_order(df)
 df['city_team'] = df['city'] + ' ' + df['name']
 
+grouped_standings = df.groupby(['season_year', 'city_group'])['z_score'].agg(
+    ['sum', 'mean', 'count']
+    ).reset_index()
+
+
 df_checklists = df.drop_duplicates(subset=['city_team'])
 
 app.layout = dbc.Container([
-    html.H1('A History of Sports Happiness'),
-    # Create a graph with the rolling period control directly to its right
-    html.Div([
-        html.Div([
-            dcc.Graph(id='happiness-graph')
-        ],  style={'width': '90%', 'display': 'inline-block'}),
 
-        html.Div([
-            daq.NumericInput(id='rolling-period',
+    html.H1('A History of Sports Happiness'),
+
+    dcc.Tabs(id='tabset', children=[
+        dcc.Tab(label='City Charts', value='charts'),
+        dcc.Tab(label='Rolling Averages', value='rolling')
+    ]),
+    html.Div(id='tab_content')
+])
+
+@callback(Output('tab_content', 'children'),
+          Input('tabset', 'value'))
+def render_content(tab):
+    if tab == 'rolling':
+        return html.Div([
+            # Full-width rolling average chart
+            html.Div([
+                dcc.Graph(id='happiness-graph', style={'width': '100%'})
+            ], style={'marginBottom': '30px'}),
+
+            # Rolling period input centered
+            html.Div([
+                daq.NumericInput(
+                    id='rolling-period',
                     min=1,
                     max=10,
                     value=4,
                     label="Rolling Period",
                     labelPosition='top'
+                )
+            ], style={'display': 'flex', 'justifyContent': 'center', 'marginBottom': '30px'}),
+
+            # Team checklists grouped and wrapped
+            html.Div([
+                html.Div([
+                    html.Label('City'),
+                    dcc.Checklist(
+                        id='city-selection',
+                        options=[{'label': city, 'value': city} for city in np.sort(df_checklists['city_group'].unique())],
+                        value=['Atlanta']
+                    )
+                ], style={'flex': '1', 'minWidth': '200px'}),
+
+                html.Div([
+                    html.Label('MLB'),
+                    dcc.Checklist(
+                        id='mlb-selection',
+                        options=sorted([
+                            city_team for city_team, league in zip(
+                                df_checklists['city_team'], df_checklists['league']
+                            ) if league == 'MLB'
+                        ]),
+                        value=[]
+                    )
+                ], style={'flex': '1', 'minWidth': '200px'}),
+
+                html.Div([
+                    html.Label('NHL'),
+                    dcc.Checklist(
+                        id='nhl-selection',
+                        options=sorted([
+                            city_team for city_team, league in zip(
+                                df_checklists['city_team'], df_checklists['league']
+                            ) if league == 'NHL'
+                        ]),
+                        value=[]
+                    )
+                ], style={'flex': '1', 'minWidth': '200px'}),
+
+                html.Div([
+                    html.Label('NBA'),
+                    dcc.Checklist(
+                        id='nba-selection',
+                        options=sorted([
+                            city_team for city_team, league in zip(
+                                df_checklists['city_team'], df_checklists['league']
+                            ) if league == 'NBA'
+                        ]),
+                        value=[]
+                    )
+                ], style={'flex': '1', 'minWidth': '200px'}),
+
+                html.Div([
+                    html.Label('NFL'),
+                    dcc.Checklist(
+                        id='nfl-selection',
+                        options=sorted([
+                            city_team for city_team, league in zip(
+                                df_checklists['city_team'], df_checklists['league']
+                            ) if league == 'NFL'
+                        ]),
+                        value=[]
+                    )
+                ], style={'flex': '1', 'minWidth': '200px'})
+            ], style={
+                'display': 'flex',
+                'flexWrap': 'wrap',
+                'gap': '20px',
+                'justifyContent': 'center'
+            })
+        ])
+    elif tab == 'charts':
+        city_options = [
+            {'label': city, 'value': city} for city in np.sort(
+                df_checklists['city_group'].unique()
             )
-    ], style={'verticalAlign': 'top', 'width': '10%', 'display': 'inline-block'}),
-    ]),
-    html.Div([
-        html.Div([
-            html.Label('City'),
-            dcc.Checklist(id='city-selection',
-                    options=[
-                        {'label': city, 'value': city} for city in np.sort(df_checklists['city_group'].unique())
-                        ],
-                        value=[]
-                    )],
-                    style={'width': '20%', 'display': 'inline-block', 'verticalAlign': 'top'}
-        ),
-        html.Div([
-            html.Label('MLB'),
-            dcc.Checklist(id='mlb-selection',
-                    options=[city_team for city_team, league in zip(
-                        df_checklists['city_team'], df_checklists['league']
-                        ) if league == 'MLB'],
-                        value=[]
-                    )],
-                    style={'width': '20%', 'display': 'inline-block', 'verticalAlign': 'top'}
-        ),
-        html.Div([
-            html.Label('NHL'),
-            dcc.Checklist(id='nhl-selection',
-                    options=[city_team for city_team, league in zip(
-                        df_checklists['city_team'], df_checklists['league']
-                        ) if league == 'NHL'],
-                        value=[]
-                    )],
-                    style={'width': '20%', 'display': 'inline-block', 'verticalAlign': 'top'}
-        ),
-        html.Div([
-            html.Label('NBA'),
-            dcc.Checklist(id='nba-selection',
-                    options=[city_team for city_team, league in zip(
-                        df_checklists['city_team'], df_checklists['league']
-                        ) if league == 'NBA'],
-                        value=[]
-                    )],
-                    style={'width': '20%', 'display': 'inline-block', 'verticalAlign': 'top'}
-        ),
-        html.Div([
-            html.Label('NFL'),
-            dcc.Checklist(id='nfl-selection',
-                    options=[city_team for city_team, league in zip(
-                        df_checklists['city_team'], df_checklists['league']
-                        ) if league == 'NFL'],
-                        value=[]
-                    )],
-                    style={'width': '20%', 'display': 'inline-block', 'verticalAlign': 'top'}
-        )
-    ]
-    )
-])
+        ]
+        year_options = [
+            {'label': year, 'value': year} for year in np.sort(
+                df['season_year'].unique()
+                )
+        ]
+        return html.Div([
+            html.Div([
+                html.Div([
+                    html.Label('City'),
+                    dcc.Dropdown(id='city-chart',
+                                options=city_options,
+                                value=random.choice(city_options)['value'],
+                                style={'width': '200px'})
+                ], style={'margin': '0 10px'}),
+
+                html.Div([
+                    html.Label('Year'),
+                    dcc.Dropdown(id='year-chart',
+                                options=year_options,
+                                value=random.choice(year_options)['value'],
+                                style={'width': '150px'})
+                ], style={'margin': '0 10px'})
+            ], style={
+                'display': 'flex', 
+                'justifyContent': 'center', 
+                'alignItems': 'center', 
+                'marginBottom': '20px'}
+            ),
+
+            html.Div([
+                html.Img(id='city-graph', style={'maxWidth': '100%', 'height': 'auto'})
+            ], style={'display': 'flex', 'justifyContent': 'center'})
+        ])
+    else:
+        return html.Div(["Invalid tab selected. Please select a valid tab."])
+
+@callback(
+    Output('city-graph', 'src'), 
+    Input('city-chart', 'value'),
+    Input('year-chart', 'value')
+)
+def update_city_graph(city, year):
+    fig = plot_city_year(city, year, df, grouped_standings)
+
+    buf = io.BytesIO()
+    fig.savefig(buf, format='png', bbox_inches='tight') 
+    buf.seek(0)
+    data = base64.b64encode(buf.getvalue()).decode('utf-8')
+    plt.close(fig)
+
+    return f'data:image/png;base64,{data}'
 
 @callback(
     Output('happiness-graph', 'figure'),
@@ -115,7 +217,7 @@ def update_graph(mlb_selection,
     df_chart = assign_rolling_mean(df, team_selection, rolling_value)
     df_chart = df_chart[df_chart['selected'] == 1]
     fig = px.line(df_chart, x='chart_position', y='rolling_mean',
-                  labels={'chart_position': 'Season Year'},
+                  labels={'season_year': 'Year', 'rolling_mean': 'Rolling Mean Z-Score'},
                   hover_data=['tooltip_teams'],
                   title='Rolling Mean Z-Score of Selected Teams')
     return fig

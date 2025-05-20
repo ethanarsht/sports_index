@@ -426,13 +426,13 @@ def main(start=1969, stop=2025, league='all', csv=True, cached=False):
     """
 
     if cached:
-        if 'all_standings.csv' in os.listdir():
-            df = pd.read_csv('all_standings.csv')
+        if 'data/all_standings.csv' in os.listdir():
+            df = pd.read_csv('data/all_standings.csv')
             return df
 
     df = construct_dataset(start=start, stop=stop, league=league)
     if csv:
-        df.to_csv('all_standings.csv', index=False)
+        df.to_csv('data/all_standings.csv', index=False)
         return df
     else:
         return df
