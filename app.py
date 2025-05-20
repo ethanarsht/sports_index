@@ -1,6 +1,8 @@
 import base64
 import io
 import random
+import numpy as np
+import matplotlib.pyplot as plt
 
 from dash import Dash, html, dcc, callback, Input, Output
 import dash_daq as daq
@@ -13,7 +15,7 @@ import standings_api_calls
 
 
 app = Dash(
-    external_stylesheets=[dbc.themes.SOLAR]
+    __name__
 )
 server = app.server
 
