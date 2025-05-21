@@ -8,7 +8,10 @@ import matplotlib.gridspec as gridspec
 import seaborn as sns
 
 
-colors = json.load(open('data/teams.json'))
+raw_colors = json.load(open('data/teams.json'))
+colors = {
+    (c['name'], c['league']): c['colors'] for c in raw_colors
+}
 
 def assign_z_score(df):
     '''
@@ -97,68 +100,61 @@ def create_main_plot(fig, ax, city, year, df):
 
     ax.set_xlim(-7,7)  
 
-def get_colors(team, league):
+def get_colors(city, team, league):
+    key = (city + ' ' + team, league.lower())
+    color_info = colors.get(key)
+    if not color_info:
+        return 'gray', 'gray'
 
-    team_colors = [c for c in colors if team in c['name'] and c['league'] == league.lower()]
-    if len(team_colors) == 1 and team_colors[0]['league'] != 'nba':
-        if len(team_colors[0]['colors']['hex']) > 1:
-            team_color = '#' + team_colors[0]['colors']['hex'][0]
-            gapcolor = '#' + team_colors[0]['colors']['hex'][1]
-        else:
-            team_color = '#' + team_colors[0]['colors']['hex'][0]
-            gapcolor = 'gray'
-    elif len(team_colors) == 1 and team_colors[0]['league'] == 'nba':
-        if len(team_colors[0]['colors']['rgb']) > 1:
-            team_color = [c for c in team_colors[0]['colors']['rgb'][0].split(' ')]
-            team_color = tuple([int(c)/255 for c in team_color])
-            gapcolor = [c for c in team_colors[0]['colors']['rgb'][1].split(' ')]
-            gapcolor = tuple([int(c)/255 for c in gapcolor])
-        else:
-            team_color = [c for c in team_colors[0]['colors']['rgb'][0].split(' ')]
-            team_color = tuple([int(c)/255 for c in team_color])
-            gapcolor = 'gray'
-    else:
-        team_color = 'gray'   
-        gapcolor = 'gray' 
-    return team_color, gapcolor
+    # Handle hex format
+    if 'hex' in color_info:
+        hex_colors = color_info['hex']
+        return (
+            f"#{hex_colors[0]}",
+            f"#{hex_colors[1]}" if len(hex_colors) > 1 else 'gray'
+        )
+
+    # Handle rgb format
+    if 'rgb' in color_info:
+        rgb_values = [tuple(int(c) / 255 for c in x.split(' ')) for x in color_info['rgb']]
+        return (
+            rgb_values[0],
+            rgb_values[1] if len(rgb_values) > 1 else 'gray'
+        )
+
+    return 'gray', 'gray'
 
 def determine_limits(df, year):
-
     df_year = df[df['season_year'] == year]
-    min_val = df_year['z_score'].min()
-    max_val = df_year['z_score'].max()
-
-    setter = max(abs(min_val), abs(max_val))
-    if setter < 0:
-        setter = setter * -1
-    return setter
+    max_abs = df_year['z_score'].abs().max()
+    return max_abs
 
 def create_subplots(fig, ax, grid_spec, year, df, standings):
     xlim_setter = determine_limits(standings, year)
-     
-    for ix, (team, league) in enumerate(zip(df['name'], df['league'])):
-        row = (ix // 2) + 1
-        col = ix % 2
-        ax = fig.add_subplot(grid_spec[row, col])
-        df_kde = standings[
-            (standings['season_year'] == year) &
-            (standings['league'] == league)
-        ]
+    standings_year = standings[standings['season_year'] == year]
 
-        team_color, gapcolor = get_colors(team, league)
+    for ix, row in df.iterrows():
+        league = row['league']
+        team = row['name']
+        city = row['city']
+        z_score = row['z_score']
+        df_kde = standings_year[standings_year['league'] == league]
 
+        row_num = (ix // 2) + 1
+        col_num = ix % 2
+        ax = fig.add_subplot(grid_spec[row_num, col_num])
+
+        team_color, gapcolor = get_colors(city, team, league)
         sns.set_style("dark")
-
         sns.histplot(df_kde, x='z_score', ax=ax, label=f'{league} {year}', alpha=0.25, color='blue', kde=True)
+        ax.axvline(z_score, color=team_color, gapcolor=gapcolor, linestyle='--', label=team)
 
-        ax.axvline(df.iloc[ix]['z_score'], color=team_color, gapcolor=gapcolor, linestyle='--', label=team)
         ax.set_title(f'{team} {year}')
         ax.set_xlabel('Team Z-Score')
         ax.set_ylabel('Teams')
         ax.legend()
         ax.label_outer()
-
-        ax.set_xlim(-xlim_setter-xlim_setter*.1, xlim_setter+xlim_setter*.1)
+        ax.set_xlim(-xlim_setter * 1.1, xlim_setter * 1.1)
 
 def plot_city_year(city, year, df, grouped_df):
     df_teams = df[
@@ -167,21 +163,19 @@ def plot_city_year(city, year, df, grouped_df):
     ]
     
     num_teams = len(df_teams)
-    n_rows = (num_teams + 1) // 2  # 2 plots per row
+    n_rows = (num_teams + 1) // 2 
 
     # Create a grid with space for a large top plot + team plots below
-
     fig = plt.figure(figsize=(11, 4 + n_rows * 3))
-    gs = gridspec.GridSpec(n_rows + 1, 2, height_ratios=[1.2] + [1]*n_rows)
+    gs = gridspec.GridSpec(n_rows + 1, 2, height_ratios=[1.5] + [1]*n_rows)
 
     ax = fig.add_subplot(gs[0, :])
     # Top row: full-width city-level KDE plot
     create_main_plot(fig=fig, ax=ax, city=city, year=year, df=grouped_df)
 
     # Team-level KDEs
-
     create_subplots(
-        fig=fig, ax=ax, grid_spec=gs, year=year, df=df_teams, standings=df
+        fig=fig, ax=ax, grid_spec=gs, year=year, df=df_teams.reset_index(drop=True), standings=df
     )
 
     fig.suptitle(f'{city} {year}: Normalized Results Across Teams', fontsize=16, fontweight='bold')
